@@ -1,9 +1,13 @@
+import cameraMan from "../../Assets/camera_man.png";
+// import talks from "../../Assets/talks.svg";
+// import community from "../../Assets/community.svg";
+
 const otherData = [
   {
     id: 1,
     name: "Illustrations / Posters",
     BgColor: "#fff",
-    cardImg: require("../../Assets/camera_man.png").default,
+    cardImg: cameraMan,
     link: "art",
   },
 
@@ -11,7 +15,7 @@ const otherData = [
   //   id: 2,
   //   name: "Talks/Events",
   //   BgColor: "#bdffdb",
-  //   cardImg: require("../../Assets/talks.svg").default,
+  //   cardImg: talks,
   //   link: "talks",
   // },
 
@@ -19,7 +23,7 @@ const otherData = [
   //   id: 3,
   //   name: "FSDC",
   //   BgColor: "#ffe28a",
-  //   cardImg: require("../../Assets/community.svg").default,
+  //   cardImg: community,
   //   link: "community",
   // },
 ];

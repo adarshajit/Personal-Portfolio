@@ -1,9 +1,26 @@
+import img1 from "../../Assets/1.svg";
+import img2 from "../../Assets/2.svg";
+import img3 from "../../Assets/3.svg";
+import img4 from "../../Assets/4.svg";
+
+import p1_user from "../../Assets/Projects/1/user.png";
+import p1_dash_user from "../../Assets/Projects/1/dashboard_user.png";
+import p1_dash_tweet from "../../Assets/Projects/1/dashboard_tweet.png";
+
+import p2_landing from "../../Assets/Projects/2/landing page.png";
+
+import p3_landing from "../../Assets/Projects/3/landing page.png";
+import p3_register from "../../Assets/Projects/3/register.png";
+
+import p4_landing from "../../Assets/Projects/4/landing page.png";
+import p4_quote from "../../Assets/Projects/4/quote.png";
+
 const ProjectData = [
   {
     id: "1",
     name: "Depression Recogniser",
     BgColor: "#FDD180",
-    cardImg: require("../../Assets/1.svg").default,
+    cardImg: img1,
     visibility: "block",
     projectLink: "https://depression-recognizer-for-twitter.vercel.app/",
     gitLink: "https://github.com/adarshajit/Depression-Recognizer-for-Twitter",
@@ -31,9 +48,9 @@ const ProjectData = [
     ],
 
     screenshots: [
-      require("../../Assets/Projects/1/user.png").default,
-      require("../../Assets/Projects/1/dashboard_user.png").default,
-      require("../../Assets/Projects/1/dashboard_tweet.png").default,
+      p1_user,
+      p1_dash_user,
+      p1_dash_tweet,
     ],
   },
 
@@ -41,7 +58,7 @@ const ProjectData = [
     id: "2",
     name: "Covid-19 Awareness",
     BgColor: "#8D9FFF",
-    cardImg: require("../../Assets/2.svg").default,
+    cardImg: img2,
     visibility: "none",
     projectLink: "https://covid19-awareness.netlify.app/",
     gitLink: "https://github.com/adarshajit/Covid19-Awareness",
@@ -57,14 +74,14 @@ const ProjectData = [
       "react-router-dom: for routing",
       "Netlify: for hosting",
     ],
-    screenshots: [require("../../Assets/Projects/2/landing page.png").default],
+    screenshots: [p2_landing],
   },
 
   {
     id: "3",
     name: "ICEFOSS 2021",
     BgColor: "#B8F7CA",
-    cardImg: require("../../Assets/3.svg").default,
+    cardImg: img3,
     visibility: "none",
     projectLink: "https://icefoss.fisat.ac.in/",
     gitLink: "https://github.com/adarshajit/ICEFOSS2021",
@@ -76,15 +93,15 @@ const ProjectData = [
     ],
     builtWith: ["HTML", "Tailwind CSS", "Javascript", "particles.js"],
     screenshots: [
-      require("../../Assets/Projects/3/landing page.png").default,
-      require("../../Assets/Projects/3/register.png").default,
+      p3_landing,
+      p3_register,
     ],
   },
   {
     id: "4",
     name: "Quotify",
     BgColor: "#ffa3ea",
-    cardImg: require("../../Assets/4.svg").default,
+    cardImg: img4,
     visibility: "none",
     projectLink: "https://quotify-app.netlify.app/",
     gitLink: "https://github.com/adarshajit/Quote-App",
@@ -102,8 +119,8 @@ const ProjectData = [
       "Netlify: for hosting",
     ],
     screenshots: [
-      require("../../Assets/Projects/4/landing page.png").default,
-      require("../../Assets/Projects/4/quote.png").default,
+      p4_landing,
+      p4_quote,
     ],
   },
   // {

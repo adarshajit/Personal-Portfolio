@@ -2,6 +2,9 @@
   "name": "portfolio-web-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
@@ -33,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.1.4"
+    "@vitejs/plugin-react": "^5.1.1",
+    "vite": "^7.2.6"
   }
 }

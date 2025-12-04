@@ -1,5 +1,4 @@
 import React from "react";
-import { Bounce } from "react-reveal";
 
 import {
   ProjectContainer,
@@ -22,27 +21,25 @@ export const Projects = () => {
   document.title = "Adarsh Ajit - Projects";
   return (
     <>
-      <Bounce top>
-        <ProjectContainer>
-          <H1>Projects</H1>
+      <ProjectContainer>
+        <H1>Projects</H1>
 
-          <ProjectGrid>
-            {ProjectData.map((p, index) => {
-              return (
-                <ProjectBox style={{ backgroundColor: `${p.BgColor}` }}>
-                  <LinkR to={`projects/${index + 1}`}>
-                    <P>{p.name}</P>
-                    <Img src={p.cardImg} />
-                    <ButtonWrapper>
-                      <P1>Read More</P1>
-                    </ButtonWrapper>
-                  </LinkR>
-                </ProjectBox>
-              );
-            })}
-          </ProjectGrid>
-        </ProjectContainer>
-      </Bounce>
+        <ProjectGrid>
+          {ProjectData.map((p, index) => {
+            return (
+              <ProjectBox style={{ backgroundColor: `${p.BgColor}` }}>
+                <LinkR to={`projects/${index + 1}`}>
+                  <P>{p.name}</P>
+                  <Img src={p.cardImg} />
+                  <ButtonWrapper>
+                    <P1>Read More</P1>
+                  </ButtonWrapper>
+                </LinkR>
+              </ProjectBox>
+            );
+          })}
+        </ProjectGrid>
+      </ProjectContainer>
 
       <ProjectContainer>
         <H1>Other</H1>

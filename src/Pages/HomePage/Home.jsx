@@ -1,5 +1,4 @@
 import React from "react";
-import Bounce from "react-reveal/Bounce";
 import {
   HomeContainer,
   HeroImg,
@@ -24,35 +23,33 @@ const Home = () => {
     <>
       <HomeContainer>
         <LandingWrapper>
-          <Bounce top>
-            <AvatarContainer>
-              <HeroImg src={Avatar} />
-            </AvatarContainer>
+          <AvatarContainer>
+            <HeroImg src={Avatar} />
+          </AvatarContainer>
 
-            <TextContainer>
-              <HeroText>Hey There! 👋</HeroText>
-              <TextInfo>
-                Welcome to my space in the web. Thanks for coming by. Here you can
-                learn about my journey so far.
-              </TextInfo>
-              <ButtonContainer>
-                <a
-                  href="mailto:adarshajit@gmail.com?body=Hi%20Adarsh,"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Let's Talk</Button>
-                </a>
-                <a
-                  href="https://resume.io/r/9baJP8n7y"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <Button>Resume</Button>
-                </a>
-              </ButtonContainer>
-            </TextContainer>
-          </Bounce>
+          <TextContainer>
+            <HeroText>Hey There! 👋</HeroText>
+            <TextInfo>
+              Welcome to my space in the web. Thanks for coming by. Here you can
+              learn about my journey so far.
+            </TextInfo>
+            <ButtonContainer>
+              <a
+                href="mailto:adarshajit@gmail.com?body=Hi%20Adarsh,"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>Let's Talk</Button>
+              </a>
+              <a
+                href="https://resume.io/r/9baJP8n7y"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Button>Resume</Button>
+              </a>
+            </ButtonContainer>
+          </TextContainer>
         </LandingWrapper>
         <Tech />
         <Education />

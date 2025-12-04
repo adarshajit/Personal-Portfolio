@@ -1,5 +1,4 @@
 import React from "react";
-import { Bounce } from "react-reveal";
 
 import {
   AboutContainer,
@@ -47,18 +46,16 @@ export const About = () => {
   return (
     <>
       <AboutContainer>
-        <Bounce top>
-          <AboutSection>
-            <AboutText>
-              <P>About Me</P>
-              <P1>So who am I?</P1>
-              <P1>Let me introduce myself...</P1>
-            </AboutText>
-            <ImgWrapper>
-              <Img src={MacIcon} />
-            </ImgWrapper>
-          </AboutSection>
-        </Bounce>
+        <AboutSection>
+          <AboutText>
+            <P>About Me</P>
+            <P1>So who am I?</P1>
+            <P1>Let me introduce myself...</P1>
+          </AboutText>
+          <ImgWrapper>
+            <Img src={MacIcon} />
+          </ImgWrapper>
+        </AboutSection>
 
         <AboutSection>
           <ImgWrapper>
@@ -68,7 +65,7 @@ export const About = () => {
           <div>
             <Tag>Hi, My name is.. </Tag>
             <Name>Adarsh Ajit ✨</Name>
-            <br/>
+            <br />
             <P2>
               I'am a recent Computer Science graduate from Federal Institute of
               Science and Technology. I was always fascinated by computers the
@@ -161,14 +158,14 @@ export const About = () => {
         <AboutText>
           <SubHeading>Colors</SubHeading>
           <ColorWrapper>
-            {colorsList.map(item=>{
-              return(
+            {colorsList.map(item => {
+              return (
                 <Color style={{ backgroundColor: `${item}` }}>
-                <ColorText>{item}</ColorText>
+                  <ColorText>{item}</ColorText>
                 </Color>
               )
             })}
-          
+
           </ColorWrapper>
         </AboutText>
 

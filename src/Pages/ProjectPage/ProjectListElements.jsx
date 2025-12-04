@@ -2,8 +2,13 @@ import styled from "styled-components";
 import { GrDocumentPdf as PDFIcon } from "react-icons/gr";
 
 export const ProjectAll = styled.div`
+  margin: 0 500px 0 500px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const ProjectContainer = styled.div`

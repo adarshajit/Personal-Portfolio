@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const EducationContainer = styled.div`
   position: relative;
-  top: 400px;
-  height: 650px;
+  margin-top: 100px;
+  height: auto;
+  min-height: 650px;
 
   @media screen and (max-width: 330px) {
     padding: 0 0 0 24px;

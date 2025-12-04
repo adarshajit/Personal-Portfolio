@@ -2,15 +2,22 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProjectContainer = styled.div`
-  margin: 70px 0 0 0;
+  margin: 70px auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const H1 = styled.h1`
   font-size: 38px;
   font-weight: 600;
-  margin: 0 0 0 100px;
+  margin: 0 150px 0 150px;
 
   @media screen and (max-width: 768px) {
     display: grid;

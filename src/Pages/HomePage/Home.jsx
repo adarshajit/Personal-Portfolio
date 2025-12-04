@@ -5,6 +5,7 @@ import {
   HeroImg,
   HeroText,
   TextInfo,
+  LandingWrapper,
   TextContainer,
   AvatarContainer,
   Button,
@@ -15,46 +16,50 @@ import Tech from "../HomePage/HomeSections/TechSection/Tech";
 import Education from "../HomePage/HomeSections/EducationSection/Education";
 import Organisations from "../HomePage/HomeSections/OrgSection/Org";
 import Contact from "./HomeSections/ContactSection/Contact";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   document.title = "Adarsh Ajit - Home";
   return (
     <>
       <HomeContainer>
-        <Bounce top>
-          <AvatarContainer>
-            <HeroImg src={Avatar} />
-          </AvatarContainer>
+        <LandingWrapper>
+          <Bounce top>
+            <AvatarContainer>
+              <HeroImg src={Avatar} />
+            </AvatarContainer>
 
-          <TextContainer>
-            <HeroText>Hey There! 👋</HeroText>
-            <TextInfo>
-              Welcome to my space in the web. Thanks for coming by. Here you can
-              learn about my journey so far.
-            </TextInfo>
-            <ButtonContainer>
-              <a
-                href="mailto:adarshajit@gmail.com?body=Hi%20Adarsh,"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>Let's Talk</Button>
-              </a>
-              <a
-                href="https://resume.io/r/9baJP8n7y"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Button>Resume</Button>
-              </a>
-            </ButtonContainer>
-          </TextContainer>
-        </Bounce>
-      </HomeContainer>
-      <Tech />
-      <Education />
-      <Organisations />
-      <Contact />
+            <TextContainer>
+              <HeroText>Hey There! 👋</HeroText>
+              <TextInfo>
+                Welcome to my space in the web. Thanks for coming by. Here you can
+                learn about my journey so far.
+              </TextInfo>
+              <ButtonContainer>
+                <a
+                  href="mailto:adarshajit@gmail.com?body=Hi%20Adarsh,"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Let's Talk</Button>
+                </a>
+                <a
+                  href="https://resume.io/r/9baJP8n7y"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <Button>Resume</Button>
+                </a>
+              </ButtonContainer>
+            </TextContainer>
+          </Bounce>
+        </LandingWrapper>
+        <Tech />
+        <Education />
+        <Organisations />
+        <Contact />
+        <Footer />
+      </HomeContainer >
     </>
   );
 };

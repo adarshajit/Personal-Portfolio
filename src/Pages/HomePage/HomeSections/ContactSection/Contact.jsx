@@ -20,7 +20,7 @@ import { AiFillGithub as GitIcon } from "react-icons/ai";
 import { AiFillLinkedin as LinkedinIcon } from "react-icons/ai";
 import { FaTwitter as TwitterIcon } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import Footer from "../../../../Components/Footer/Footer";
+
 const Contact = () => {
   return (
     <>
@@ -81,8 +81,6 @@ const Contact = () => {
             </IconContext.Provider>
           </IconWrapper>
         </ContactInfo>
-
-        <Footer />
       </ContactContainer>
     </>
   );

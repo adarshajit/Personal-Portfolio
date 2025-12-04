@@ -84,8 +84,8 @@ const ProjectList = () => {
             return <Img2 src={pic} />;
           })}
         </ProjectInfo>
+        <Footer />
       </ProjectAll>
-      <Footer />
     </>
   );
 };

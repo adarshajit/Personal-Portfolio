@@ -62,9 +62,8 @@ export const Projects = () => {
             );
           })}
         </ProjectFlex>
+        <Footer />
       </ProjectContainer>
-
-      <Footer />
     </>
   );
 };

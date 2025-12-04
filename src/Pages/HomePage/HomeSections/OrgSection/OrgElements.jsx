@@ -6,17 +6,18 @@ export const OrgContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 400px;
+  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
-    top: 800px;
-    margin: 0 5px 0 5px;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   @media screen and (max-width: 350px) {
     padding: 0 14px 0 14px;
     position: relative;
-    top: 120rem;
+    margin-top: 50px;
     max-width: 270px;
     max-height: 270px;
   }
@@ -51,18 +52,22 @@ export const P = styled.p`
 `;
 
 export const BoxContainer = styled.div`
-  width: 1000px;
-  height: 280px;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 280px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   background-color: #fff;
   margin: 70px 0 0 0;
+  padding: 20px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    width: 350px;
-    height: 680px;
+    width: 100%;
+    height: auto;
+    gap: 20px;
   }
 
   @media screen and (max-width: 350px) {

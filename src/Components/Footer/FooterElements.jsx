@@ -5,4 +5,5 @@ export const P = styled.p`
   font-weight: 500;
   margin-top: 40px;
   font-size: 18px;
+  text-align: center;
 `;

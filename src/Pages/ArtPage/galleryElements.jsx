@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const ArtContainer = styled.div`
-  margin: 70px 0 0 0;
+  margin: 70px auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 `;

@@ -4,16 +4,17 @@ import { FiMail } from "react-icons/fi";
 
 export const ContactContainer = styled.div`
   position: relative;
-  top: 600px;
-  height: 650px;
+  margin-top: 100px;
+  height: auto;
+  padding-bottom: 50px;
 
   @media screen and (max-width: 768px) {
-    top: 55rem;
+    margin-top: 55rem;
   }
 
   @media screen and (max-width: 350px) {
     padding: 0 0 0 38px;
-    top: 170rem;
+    margin-top: 170rem;
     max-width: 270px;
     max-height: 270px;
   }
@@ -134,14 +135,15 @@ export const P3 = styled.p`
 `;
 
 export const IconWrapper = styled.div`
-  display: grid;
-  place-items: center;
-  margin: 50px 0 0 0;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  gap: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-gap: 70px;
+    gap: 50px;
   }
 `;
 

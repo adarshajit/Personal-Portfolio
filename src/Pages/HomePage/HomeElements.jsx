@@ -1,26 +1,37 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  height: 500px;
+  margin: 0 500px 0 500px;
+  display: flex;
+  flex-direction: column;
 
-  @media screen and (max-width: 767px) {
-    grid-template-columns: 1fr;
-    height: 580px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
   }
+`;
 
-  @media screen and (max-width: 350px) {
-    padding: 0 0 0 28px;
+export const LandingWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  min-height: 400px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
   }
 `;
 
 export const AvatarContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 80px;
-  height: 400px;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0 0 50px;
@@ -47,18 +58,26 @@ export const HeroImg = styled.img`
 `;
 
 export const TextContainer = styled.div`
-  padding: 150px;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 50px;
+  max-width: 700px;
+  width: 100%;
+  gap: 10px;
 
   @media screen and (max-width: 768px) {
     padding: 20px;
+    height: auto;
   }
 
   @media screen and (max-width: 350px) {
-    padding: 0 14px 0 14px;
-    margin: 110px 0 0 0;
-    max-width: 270px;
-    max-height: 270px;
+    padding: 0 14px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 `;
 

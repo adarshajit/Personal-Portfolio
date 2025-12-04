@@ -9,12 +9,12 @@ export const ContactContainer = styled.div`
   padding-bottom: 50px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 55rem;
+    margin-top: 100px;
   }
 
   @media screen and (max-width: 350px) {
     padding: 0 0 0 38px;
-    margin-top: 170rem;
+    margin-top: 50px;
     max-width: 270px;
     max-height: 270px;
   }
@@ -59,7 +59,6 @@ export const ContactBox = styled.div`
   }
 
   @media screen and (max-width: 350px) {
-    top: 170rem;
     max-width: 270px;
     max-height: 270px;
   }

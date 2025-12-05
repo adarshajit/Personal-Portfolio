@@ -2,7 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons/lib";
 import { useParams } from "react-router-dom";
 import ProjecData from "./projectData";
-import Footer from "../../Components/Footer/Footer";
+import { Footer } from "@components";
 
 import {
   ProjectWrapper,

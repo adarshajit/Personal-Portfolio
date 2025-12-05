@@ -1,13 +1,8 @@
 import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Home from "./Pages/HomePage/Home";
-import { About } from "./Pages/AboutPage/About";
-import { Projects } from "./Pages/ProjectPage/Projects";
-import ProjectList from "./Pages/ProjectPage/ProjectList";
-import Art from "./Pages/ArtPage";
+import { Navbar, Sidebar } from "@components";
+import { Home, About, Projects, ProjectList, Art } from "@pages";
 // import Talks from "./Pages/TalksPage";
 // import Fsdc from "./Pages/FSDC";
 

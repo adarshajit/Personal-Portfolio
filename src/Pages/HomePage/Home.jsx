@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   HomeContainer,
   HeroImg,
@@ -10,12 +10,9 @@ import {
   Button,
   ButtonContainer,
 } from "./HomeElements";
-import Avatar from "../../Assets/doodle.png";
-import Tech from "../HomePage/HomeSections/TechSection/Tech";
-import Education from "../HomePage/HomeSections/EducationSection/Education";
-import Organisations from "../HomePage/HomeSections/OrgSection/Org";
-import Contact from "./HomeSections/ContactSection/Contact";
-import Footer from "../../Components/Footer/Footer";
+import Avatar from "@assets/doodle.png";
+import { Tech, Education, Organisations, Contact } from "./HomeSections";
+import { Footer } from "@components";
 
 const Home = () => {
   document.title = "Adarsh Ajit - Home";

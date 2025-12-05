@@ -1,6 +1,5 @@
-import cameraMan from "../../Assets/camera_man.png";
-// import talks from "../../Assets/talks.svg";
-// import community from "../../Assets/community.svg";
+import cameraMan from "@assets/camera_man.png";
+
 
 const otherData = [
   {

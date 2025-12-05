@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import {
   SidebarContainer,
@@ -9,7 +9,7 @@ import {
   Logo,
 } from "./SidebarElements";
 
-import MyLogo from "../../Assets/logo.png";
+import MyLogo from "@assets/logo.png";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (

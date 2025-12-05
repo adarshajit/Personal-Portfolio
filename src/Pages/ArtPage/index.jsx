@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Footer from "../../Components/Footer/Footer";
-import Modal from "../../Components/Modal";
+import { Footer, Modal } from "@components";
 import Gallery from "./gallery";
 
 const Art = () => {

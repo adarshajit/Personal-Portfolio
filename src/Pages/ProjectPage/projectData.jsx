@@ -1,19 +1,19 @@
-import img1 from "../../Assets/1.svg";
-import img2 from "../../Assets/2.svg";
-import img3 from "../../Assets/3.svg";
-import img4 from "../../Assets/4.svg";
+import img1 from "@assets/1.svg";
+import img2 from "@assets/2.svg";
+import img3 from "@assets/3.svg";
+import img4 from "@assets/4.svg";
 
-import p1_user from "../../Assets/Projects/1/user.png";
-import p1_dash_user from "../../Assets/Projects/1/dashboard_user.png";
-import p1_dash_tweet from "../../Assets/Projects/1/dashboard_tweet.png";
+import p1_user from "@assets/Projects/1/user.png";
+import p1_dash_user from "@assets/Projects/1/dashboard_user.png";
+import p1_dash_tweet from "@assets/Projects/1/dashboard_tweet.png";
 
-import p2_landing from "../../Assets/Projects/2/landing page.png";
+import p2_landing from "@assets/Projects/2/landing page.png";
 
-import p3_landing from "../../Assets/Projects/3/landing page.png";
-import p3_register from "../../Assets/Projects/3/register.png";
+import p3_landing from "@assets/Projects/3/landing page.png";
+import p3_register from "@assets/Projects/3/register.png";
 
-import p4_landing from "../../Assets/Projects/4/landing page.png";
-import p4_quote from "../../Assets/Projects/4/quote.png";
+import p4_landing from "@assets/Projects/4/landing page.png";
+import p4_quote from "@assets/Projects/4/quote.png";
 
 const ProjectData = [
   {

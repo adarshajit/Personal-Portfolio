@@ -11,7 +11,7 @@ import {
 import * as SkillIcon from "react-icons/di";
 import { CgFigma } from "react-icons/cg";
 import { IconContext } from "react-icons/lib";
-import skillImg from "../../../../Assets/skillImg.svg";
+import skillImg from "@assets/skillImg.svg";
 const Tech = () => {
   return (
     <>

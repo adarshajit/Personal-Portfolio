@@ -13,8 +13,8 @@ import {
   Img1,
   A,
 } from "./OrgElements";
-import CCI from "../../../../Assets/cci.png";
-import FFSC from "../../../../Assets/ffsc.png";
+import CCI from "@assets/cci.png";
+import FFSC from "@assets/ffsc.png";
 
 const Organisations = () => {
   return (

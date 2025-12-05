@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import {
   ProjectContainer,
@@ -14,7 +14,7 @@ import {
   ProjectFlex,
 } from "./ProjectElements";
 
-import Footer from "../../Components/Footer/Footer";
+import { Footer } from "@components";
 import ProjectData from "./projectData";
 import otherData from "./otherData";
 export const Projects = () => {

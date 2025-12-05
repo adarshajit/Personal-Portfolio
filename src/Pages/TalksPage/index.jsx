@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   EducationContainer,
   H1,
@@ -11,7 +11,7 @@ import {
   Header,
   Num,
 } from "./talksElements";
-import Footer from "../../Components/Footer/Footer";
+import { Footer } from "@components";
 
 const Talks = () => {
   return (

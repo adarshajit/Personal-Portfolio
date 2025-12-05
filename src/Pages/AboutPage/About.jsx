@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import {
   AboutContainer,
@@ -36,10 +36,10 @@ import {
   MyData,
   InfoCard,
 } from "./AboutElements";
-import MacIcon from "../../Assets/mac.svg";
-import Profile from "../../Assets/profile.jpg";
-import Logo from "../../Assets/logo.png";
-import Footer from "../../Components/Footer/Footer";
+import MacIcon from "@assets/mac.svg";
+import Profile from "@assets/profile.jpg";
+import Logo from "@assets/logo.png";
+import { Footer } from "@components";
 export const About = () => {
   document.title = "Adarsh Ajit - About";
   const colorsList = ["#000", "#5a5a5a", "#7c4dff"];

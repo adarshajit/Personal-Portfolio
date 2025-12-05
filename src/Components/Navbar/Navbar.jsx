@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   Nav,
   Bars,
@@ -15,7 +15,7 @@ import { BiFace as AboutIcon } from "react-icons/bi";
 import { FaSuitcase as ProjectIcon } from "react-icons/fa";
 import { FiMail as MailIcon } from "react-icons/fi";
 import { IconContext } from "react-icons/lib";
-import logo from "../../Assets/logo.png";
+import logo from "@assets/logo.png";
 const Navbar = ({ toggle }) => {
   return (
     <>

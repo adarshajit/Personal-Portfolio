@@ -58,10 +58,11 @@ export const ArtBox = styled.div`
   grid-row: span 5;
 
   justify-content: center;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid #e5e5e5ff;
 
   &:hover {
     cursor: pointer;
-    transition: 0.3s all ease-in-out;
     transform: scale(1.01);
     box-shadow: -6px 32px 33px -28px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -6px 32px 33px -28px rgba(0, 0, 0, 0.75);

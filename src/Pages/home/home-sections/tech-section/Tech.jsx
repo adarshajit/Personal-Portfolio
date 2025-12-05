@@ -8,10 +8,23 @@ import {
   Icon,
   Img,
 } from "./TechElements";
-import * as SkillIcon from "react-icons/di";
+import {
+  DiPython,
+  DiJavascript1,
+  DiGit,
+  DiHtml5,
+  DiCss3,
+  DiBootstrap,
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+  DiIllustrator,
+  DiPhotoshop,
+} from "react-icons/di";
 import { CgFigma } from "react-icons/cg";
 import { IconContext } from "react-icons/lib";
-import skillImg from "@assets/skillImg.svg";
+import { ASSETS } from "@constants/assets";
+
 const Tech = () => {
   return (
     <>
@@ -23,38 +36,38 @@ const Tech = () => {
           <IconContext.Provider value={{ size: "57px" }}>
             <SkillIconWrapper>
               <Icon>
-                <SkillIcon.DiPython />
+                <DiPython />
               </Icon>
               <Icon>
-                <SkillIcon.DiJavascript1 />
+                <DiJavascript1 />
               </Icon>
               <Icon>
-                <SkillIcon.DiGit />
+                <DiGit />
               </Icon>
               <Icon>
-                <SkillIcon.DiHtml5 />
+                <DiHtml5 />
               </Icon>
               <Icon>
-                <SkillIcon.DiCss3 />
+                <DiCss3 />
               </Icon>
               <Icon>
-                <SkillIcon.DiBootstrap />
+                <DiBootstrap />
               </Icon>
               <Icon>
-                <SkillIcon.DiReact />
+                <DiReact />
               </Icon>
               <Icon>
-                <SkillIcon.DiNodejsSmall />
+                <DiNodejsSmall />
               </Icon>
               <Icon>
-                <SkillIcon.DiMongodb />
+                <DiMongodb />
               </Icon>
               <Icon>
-                <SkillIcon.DiIllustrator />
+                <DiIllustrator />
               </Icon>
 
               <Icon>
-                <SkillIcon.DiPhotoshop />
+                <DiPhotoshop />
               </Icon>
 
               <Icon>
@@ -62,7 +75,7 @@ const Tech = () => {
               </Icon>
             </SkillIconWrapper>
           </IconContext.Provider>
-          <Img src={skillImg} />
+          <Img src={ASSETS.SKILL_IMG} />
         </SkillContainer>
       </TechContainer>
     </>

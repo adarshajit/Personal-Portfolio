@@ -13,8 +13,7 @@ import {
   Img1,
   A,
 } from "./OrgElements";
-import CCI from "@assets/cci.png";
-import FFSC from "@assets/ffsc.png";
+import { ASSETS } from "@constants/assets";
 
 const Organisations = () => {
   return (
@@ -23,7 +22,7 @@ const Organisations = () => {
         <H1>Organisations</H1>
         <P>I'm a proud member of these organisations in my college.</P>
         <BoxContainer>
-          <Img src={CCI} />
+          <Img src={ASSETS.CCI} />
           <TextContainer>
             <P1>Center For Cyber Innovation</P1>
             <P2>
@@ -42,7 +41,7 @@ const Organisations = () => {
           </TextContainer>
         </BoxContainer>
         <BoxContainer>
-          <Img1 src={FFSC} />
+          <Img1 src={ASSETS.FFSC} />
           <TextContainer>
             <P1>Fisat Free Software Cell</P1>
             <P2>

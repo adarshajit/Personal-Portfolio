@@ -1,19 +1,20 @@
-import img1 from "@assets/1.svg";
-import img2 from "@assets/2.svg";
-import img3 from "@assets/3.svg";
-import img4 from "@assets/4.svg";
+import { ASSETS } from "@constants/assets";
+const img1 = ASSETS.PROJECTS.IMG1;
+const img2 = ASSETS.PROJECTS.IMG2;
+const img3 = ASSETS.PROJECTS.IMG3;
+const img4 = ASSETS.PROJECTS.IMG4;
 
-import p1_user from "@assets/Projects/1/user.png";
-import p1_dash_user from "@assets/Projects/1/dashboard_user.png";
-import p1_dash_tweet from "@assets/Projects/1/dashboard_tweet.png";
+const p1_user = ASSETS.PROJECTS.P1_USER;
+const p1_dash_user = ASSETS.PROJECTS.P1_DASH_USER;
+const p1_dash_tweet = ASSETS.PROJECTS.P1_DASH_TWEET;
 
-import p2_landing from "@assets/Projects/2/landing page.png";
+const p2_landing = ASSETS.PROJECTS.P2_LANDING;
 
-import p3_landing from "@assets/Projects/3/landing page.png";
-import p3_register from "@assets/Projects/3/register.png";
+const p3_landing = ASSETS.PROJECTS.P3_LANDING;
+const p3_register = ASSETS.PROJECTS.P3_REGISTER;
 
-import p4_landing from "@assets/Projects/4/landing page.png";
-import p4_quote from "@assets/Projects/4/quote.png";
+const p4_landing = ASSETS.PROJECTS.P4_LANDING;
+const p4_quote = ASSETS.PROJECTS.P4_QUOTE;
 
 const ProjectData = [
   {

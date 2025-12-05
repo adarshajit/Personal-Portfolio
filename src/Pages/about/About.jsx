@@ -36,10 +36,9 @@ import {
   MyData,
   InfoCard,
 } from "./AboutElements";
-import MacIcon from "@assets/mac.svg";
-import Profile from "@assets/profile.jpg";
-import Logo from "@assets/logo.png";
+import { ASSETS } from "@constants/assets";
 import { Footer } from "@components";
+
 export const About = () => {
   document.title = "Adarsh Ajit - About";
   const colorsList = ["#000", "#5a5a5a", "#7c4dff"];
@@ -53,13 +52,13 @@ export const About = () => {
             <P1>Let me introduce myself...</P1>
           </AboutText>
           <ImgWrapper>
-            <Img src={MacIcon} />
+            <Img src={ASSETS.MAC_ICON} />
           </ImgWrapper>
         </AboutSection>
 
         <AboutSection>
           <ImgWrapper>
-            <ProfileImg src={Profile} />
+            <ProfileImg src={ASSETS.PROFILE} />
             <Overlay />
           </ImgWrapper>
           <div>
@@ -120,7 +119,7 @@ export const About = () => {
         <AboutSection>
           <H1>A</H1>
           <ImgWrapper>
-            <ImgLogo src={Logo} />
+            <ImgLogo src={ASSETS.LOGO} />
           </ImgWrapper>
         </AboutSection>
 
@@ -181,7 +180,7 @@ export const About = () => {
         </QuoteSection>
 
         <Footer />
-      </AboutContainer>
+      </AboutContainer >
     </>
   );
 };

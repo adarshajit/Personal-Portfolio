@@ -9,7 +9,7 @@ import {
   Logo,
 } from "./SidebarElements";
 
-import MyLogo from "@assets/logo.png";
+import { ASSETS } from "@constants/assets";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -17,8 +17,8 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
+      <Logo src={ASSETS.LOGO} />
       <SidebarWrapper>
-        <Logo src={MyLogo} />
         <SidebarRoute exact to="/" onClick={toggle}>
           Home
         </SidebarRoute>

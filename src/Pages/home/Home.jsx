@@ -10,18 +10,19 @@ import {
   Button,
   ButtonContainer,
 } from "./HomeElements";
-import Avatar from "@assets/doodle.png";
-import { Tech, Education, Organisations, Contact } from "./HomeSections";
+import { ASSETS } from "@constants/assets";
+import { Tech, Education, Organisations, Contact } from "./home-sections";
 import { Footer } from "@components";
 
 const Home = () => {
   document.title = "Adarsh Ajit - Home";
+
   return (
     <>
       <HomeContainer>
         <LandingWrapper>
           <AvatarContainer>
-            <HeroImg src={Avatar} />
+            <HeroImg src={ASSETS.DOODLE} />
           </AvatarContainer>
 
           <TextContainer>

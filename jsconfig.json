@@ -6,13 +6,13 @@
         "src/*"
       ],
       "@components/*": [
-        "src/Components/*"
+        "src/components/*"
       ],
       "@pages/*": [
-        "src/Pages/*"
+        "src/pages/*"
       ],
-      "@assets/*": [
-        "src/Assets/*"
+      "@constants/*": [
+        "src/constants/*"
       ]
     }
   },

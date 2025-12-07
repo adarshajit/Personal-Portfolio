@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { GrDocumentPdf as PDFIcon } from "react-icons/gr";
 
 export const ProjectAll = styled.div`
-  margin: 0 500px 0 500px;
+  margin: 0 300px 0 300px;
   display: flex;
   flex-direction: column;
 

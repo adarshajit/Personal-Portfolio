@@ -2,49 +2,54 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProjectContainer = styled.div`
-  margin: 70px auto 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     margin: 0;
+    gap: 50px;
   }
 `;
 
 export const H1 = styled.h1`
+  display: flex;
+  align-self: flex-start;
   font-size: 38px;
   font-weight: 600;
-  margin: 0 150px 0 150px;
+  margin: 0 100px 0 120px;
 
   @media screen and (max-width: 768px) {
-    display: grid;
-    place-items: center;
     margin: 0;
+    max-width: 350px;
+    align-self: center;
   }
 `;
 
 export const ProjectGrid = styled.div`
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 75px;
-  margin: 40px 100px 0 100px;
-  grid-gap: 5px;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 30px;
+  flex-wrap: wrap;
+  padding: 100px;
+  align-self: flex-start;
 
-  @media screen and (min-width: 1720px) {
-    grid-gap: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 0 0 50px 0;
+    flex-direction: column;
+    grid-gap: 15px;
+    padding: 10px;
+    align-self: center;
   }
 `;
 
 export const ProjectFlex = styled.div`
   display: flex;
   flex-direction: row;
-  grid-gap: 40px;
+  grid-gap: 30px;
   align-self: flex-start;
-  margin: 40px 100px 0 120px;
+  padding: 100px;
 
   @media screen and (max-width: 768px) {
     grid-gap: 5px;
@@ -55,7 +60,8 @@ export const ProjectFlex = styled.div`
 `;
 
 export const ProjectBox = styled.div`
-  width: 400px;
+  width: 100%;
+  max-width: 350px;
   height: 350px;
   padding: 10px;
   border-radius: 10px;

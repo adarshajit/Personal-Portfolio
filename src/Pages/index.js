@@ -3,4 +3,4 @@ export { About } from './about/About';
 export { Projects } from './projects/Projects';
 export { default as Art } from './art';
 
-export { default as ProjectList } from './projects/ProjectList';
+export { default as ProjectDetail } from './projects/ProjectDetail';

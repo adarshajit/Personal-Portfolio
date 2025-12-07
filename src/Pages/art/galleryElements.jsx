@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const ArtContainer = styled.div`
-  margin: 70px auto 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 300px 0 300px;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 0 20px;
+  }
 `;
 
 export const H1 = styled.h1`
   font-size: 38px;
   font-weight: 600;
-  margin: 0 0 0 100px;
 
   @media screen and (max-width: 768px) {
     display: grid;
@@ -24,7 +26,6 @@ export const H1 = styled.h1`
 export const P = styled.p`
   font-size: 20px;
   color: #5e5e5e;
-  margin: 0 0 0 100px;
   font-weight: 500;
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -35,11 +36,12 @@ export const P = styled.p`
 `;
 export const ArtGrid = styled.div`
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 75px;
-  margin: 40px 100px 0 100px;
-  grid-gap: 5px;
+  justify-items: center;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
+  width: 100%;
 
   @media screen and (min-width: 1720px) {
     grid-gap: 20px;
@@ -47,19 +49,17 @@ export const ArtGrid = styled.div`
 `;
 
 export const ArtBox = styled.div`
-  max-width: 500px;
-  max-height: 500px;
-  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  grid-column: span 3;
-  grid-row: span 5;
-
   justify-content: center;
+  align-items: center;
   transition: 0.3s all ease-in-out;
   border: 1px solid #e5e5e5ff;
+  padding: 10px;
 
   &:hover {
     cursor: pointer;
@@ -73,22 +73,20 @@ export const ArtBox = styled.div`
     max-width: 500px;
     max-height: 500px;
   }
-
-  /* @media screen and (min-width: 360px) {
-    width: 350px;
-  } */
 `;
 
 export const Img = styled.img`
-  max-width: 400px;
+  max-width: 100%;
   max-height: 350px;
-  display: flex;
+  height: auto;
+  object-fit: contain;
+  display: block;
   align-self: center;
-  margin: 30px 15px 15px 15px;
+  margin: 10px 0;
 
   @media screen and (max-width: 768px) {
-    max-width: 280px;
+    max-width: 100%;
     max-height: 350px;
-    margin-left: 32px;
+    margin: 10px 0;
   }
 `;

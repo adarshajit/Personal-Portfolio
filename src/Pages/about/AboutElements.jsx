@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 500px 0 500px;
+  gap: 150px;
 
   @media screen and (max-width: 768px) {
     margin: 0;
@@ -11,32 +14,21 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutSection = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-
-  margin: 40px 0 150px 0;
+  display: flex;
+  gap: 70px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    margin: 40px 0 140px 0;
-    grid-gap: 5px;
-    padding: 5px;
+    flex-direction: column;
   }
 `;
 
 export const MyData = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-
-  margin: 0px 50px 280px 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    padding: 5px;
-    margin: 0 0 170px 0;
+    flex-direction: column;
   }
 `;
 
@@ -73,6 +65,7 @@ export const P = styled.p`
   font-size: 80px;
   font-weight: 600;
   text-align: center;
+  text-wrap: nowrap;
 
   @media screen and (max-width: 768px) {
     font-size: 50px;
@@ -88,6 +81,7 @@ export const P1 = styled.p`
   font-weight: 500;
   color: #5a5a5a;
   text-align: left;
+
   @media screen and (max-width: 768px) {
     font-size: 18px;
     padding: 0 5px 0 5px;
@@ -187,12 +181,11 @@ export const SubHeading = styled.p`
 export const P2 = styled.p`
   font-size: 18px;
   font-weight: 500;
-  margin-right: 30px;
 
   @media screen and (max-width: 768px) {
     font-size: 17px;
     text-align: left;
-    margin-left: 30px;
+    margin: 0 30px 0 30px;
   }
 `;
 
@@ -221,32 +214,22 @@ export const Name = styled.p`
   }
 `;
 
-export const Desig = styled.p`
-  font-size: 22px;
-  color: #5a5a5a;
-  font-weight: 800;
-  margin-right: 30px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-    margin-left: 30px;
-    text-align: left;
-  }
-`;
-
 export const ImgLogo = styled.img`
-  width: 150px;
-  height: 200px;
+  width: 200px;
   align-self: center;
 
   @media screen and (max-width: 768px) {
     width: 150px;
-    height: 200px;
   }
 `;
 
 export const H1 = styled.h1`
-  font-size: 145px;
+  font-size: 200px;
+  align-self: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 145px;
+  }
 `;
 
 export const FontWrapper = styled.div`
@@ -319,11 +302,11 @@ export const ColorWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
   place-items: center;
-  margin-bottom: 200px;
+  margin: 200px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-gap: 0px;
+    grid-gap: 60px;
   }
 `;
 
@@ -331,7 +314,6 @@ export const Color = styled.div`
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin: 100px 0 0 0;
   display: grid;
   place-items: center;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -350,7 +332,6 @@ export const QuoteSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px 0 75px 0;
 `;
 
 export const QuoteOverlay = styled.div`

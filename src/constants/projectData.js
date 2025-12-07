@@ -1,4 +1,5 @@
 import { ASSETS } from "@constants/assets";
+
 const img1 = ASSETS.PROJECTS.IMG1;
 const img2 = ASSETS.PROJECTS.IMG2;
 const img3 = ASSETS.PROJECTS.IMG3;
@@ -167,6 +168,16 @@ const ProjectData = [
   //     "Netlify: for hosting",
   //   ],
   // },
+];
+
+export const otherData = [
+  {
+    id: 1,
+    name: "Illustrations / Posters",
+    BgColor: "#fff",
+    cardImg: ASSETS.PROJECTS.CAMERA_MAN,
+    link: "/art",
+  },
 ];
 
 export default ProjectData;

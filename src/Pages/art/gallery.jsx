@@ -1,5 +1,5 @@
 import React from "react";
-import artImages from "./artData";
+import artImages from "@constants/artData";
 import { ArtContainer, ArtGrid, Img, H1, ArtBox, P } from "./galleryElements";
 
 const Gallery = ({ setSelectedImg }) => {

@@ -12,18 +12,16 @@ export const HomeContainer = styled.div`
 
 export const LandingWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   grid-gap: 10px;
   min-height: 400px;
   height: auto;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
     height: auto;
     padding: 40px 0;
+    flex-direction: column;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons/lib";
 import { useParams } from "react-router-dom";
-import ProjecData from "./projectData";
+import ProjectData from "@constants/projectData";
 import { Footer } from "@components";
 
 import {
@@ -23,12 +23,12 @@ import {
   H1,
   Img2,
   PDF,
-} from "./ProjectListElements";
+} from "./ProjectDetailElements";
 import { AiFillGithub as GitIcon } from "react-icons/ai";
 
-const ProjectList = () => {
-  var id = useParams();
-  var data = ProjecData.filter((item) => item.id === id.Id)[0];
+const ProjectDetail = () => {
+  const { Id: selectedId } = useParams();
+  const data = ProjectData.filter((item) => item.id === selectedId)[0];
 
   return (
     <>
@@ -90,4 +90,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default ProjectDetail;

@@ -1,6 +1,5 @@
-export { default as Home } from './home/Home';
-export { About } from './about/About';
-export { Projects } from './projects/Projects';
-export { default as Art } from './art';
-
-export { default as ProjectDetail } from './projects/ProjectDetail';
+export { default as Home } from "./home";
+export { default as About } from "./about";
+export { default as Projects } from "./projects";
+export { default as ProjectDetail } from "./projects/ProjectDetail";
+export { default as Art } from "./art";

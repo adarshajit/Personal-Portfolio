@@ -39,9 +39,9 @@ export const SidebarWrapper = styled.div`
 
 export const Logo = styled.img`
   align-self: center;
+  justify-self: center;
   width: 80px;
-  position: absolute;
-  top: 70px;
+  margin-bottom: 100px;
 `;
 
 export const SidebarRoute = styled(LinkRouter)`

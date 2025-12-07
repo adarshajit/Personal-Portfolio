@@ -39,7 +39,7 @@ export const InfoCard = styled.div`
   border: 3px solid #000;
   border-radius: 10px;
   align-self: center;
-  width: 300px;
+  width: 250px;
   height: 140px;
   color: #fff;
   justify-content: center;
@@ -295,6 +295,10 @@ export const TypeFace = styled.p`
     transition: all 0.3s ease-in-out;
     cursor: ne-resize;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 100px;
+  }
 `;
 
 export const ColorWrapper = styled.div`
@@ -305,6 +309,7 @@ export const ColorWrapper = styled.div`
   margin: 200px;
 
   @media screen and (max-width: 768px) {
+    margin: 50px 0;
     grid-template-columns: 1fr;
     grid-gap: 60px;
   }
@@ -332,31 +337,30 @@ export const QuoteSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 export const QuoteOverlay = styled.div`
-  display: flex;
-  align-self: center;
   border-radius: 10px;
-  width: 1000px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #000;
-  position: relative;
-  z-index: 6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid #7c4dff;
+  width: 100%;
+  height: 100%;
   transform: translate(30px, 30px);
   background-color: #7c4dff;
+  z-index: 6;
 
   @media screen and (max-width: 768px) {
-    width: 360px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     transform: translate(20px, 20px);
   }
 
   @media screen and (max-width: 375px) {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     transform: translate(20px, 20px);
   }
 `;
@@ -366,21 +370,25 @@ export const Quote = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   width: 1000px;
-  height: 300px;
+  min-height: 300px;
   background-color: #fff;
   z-index: 10;
   border: 3px solid #000;
   @media screen and (max-width: 768px) {
-    width: 360px;
-    height: 400px;
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    min-height: 400px;
   }
 
   @media screen and (max-width: 375px) {
-    width: 300px;
-    height: 400px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    min-height: 400px;
   }
 `;
 

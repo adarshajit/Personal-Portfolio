@@ -1,4 +1,4 @@
-
+import { ASSETS } from "@constants/assets";
 
 import {
   SidebarContainer,
@@ -9,23 +9,28 @@ import {
   Logo,
 } from "./SidebarElements";
 
-import { ASSETS } from "@constants/assets";
 
 const Sidebar = ({ isOpen, toggle }) => {
+
+  const handleSidebarClick = (e) => {
+    e.stopPropagation();
+    toggle();
+  };
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
+      <Icon onClick={handleSidebarClick}>
         <CloseIcon />
       </Icon>
-      <Logo src={ASSETS.LOGO} />
       <SidebarWrapper>
-        <SidebarRoute exact to="/" onClick={toggle}>
+        <Logo src={ASSETS.LOGO} />
+        <SidebarRoute exact to="/" onClick={handleSidebarClick}>
           Home
         </SidebarRoute>
-        <SidebarRoute to="/about" onClick={toggle}>
+        <SidebarRoute to="/about" onClick={handleSidebarClick}>
           About
         </SidebarRoute>
-        <SidebarRoute to="/projects" onClick={toggle}>
+        <SidebarRoute to="/projects" onClick={handleSidebarClick}>
           Projects
         </SidebarRoute>
       </SidebarWrapper>

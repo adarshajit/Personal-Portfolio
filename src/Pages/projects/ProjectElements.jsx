@@ -6,6 +6,7 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 100px 0 100px;
 
   @media screen and (max-width: 768px) {
     margin: 0;
@@ -36,6 +37,7 @@ export const ProjectGrid = styled.div`
   align-self: flex-start;
 
   @media screen and (max-width: 768px) {
+    width: 100%;
     margin: 0 0 50px 0;
     flex-direction: column;
     grid-gap: 15px;
@@ -52,17 +54,20 @@ export const ProjectFlex = styled.div`
   padding: 100px;
 
   @media screen and (max-width: 768px) {
-    grid-gap: 5px;
+    width: 100%;
+    grid-gap: 15px;
     flex-direction: column;
     align-self: center;
-    margin: 40px;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 `;
 
 export const ProjectBox = styled.div`
-  width: 100%;
+  width: 350px;
   max-width: 350px;
-  height: 350px;
+  height: auto;
+  min-height: 350px;
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -83,12 +88,9 @@ export const ProjectBox = styled.div`
     -moz-box-shadow: -6px 32px 33px -28px rgba(0, 0, 0, 0.75);
   }
 
-  @media screen and (max-width: 360px) {
-    width: 280px;
-  }
-
-  @media screen and (min-width: 360px) {
-    width: 350px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    max-width: 350px;
   }
 `;
 
@@ -99,16 +101,18 @@ export const P = styled.p`
 `;
 
 export const Img = styled.img`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
+  object-fit: contain;
   display: flex;
   align-self: center;
-  margin: 30px 15px 15px 15px;
+  margin: 15px 0;
 
   @media screen and (max-width: 768px) {
-    width: 250px;
-    height: 220px;
-    margin-left: 32px;
+    max-width: 100%;
+    height: auto;
+    max-height: 220px;
   }
 `;
 
@@ -129,7 +133,17 @@ export const LinkR = styled(Link)`
 `;
 
 export const Img1 = styled.img`
-  margin: 15px 0 0 27px;
+  width: 100%;
+  max-width: 300px;
   height: 230px;
-  width: 250px;
+  object-fit: contain;
+  display: flex;
+  align-self: center;
+  margin: 15px 0;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: auto;
+    max-height: 230px;
+  }
 `;

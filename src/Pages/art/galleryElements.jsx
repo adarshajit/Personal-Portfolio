@@ -27,10 +27,12 @@ export const P = styled.p`
   font-size: 20px;
   color: #5e5e5e;
   font-weight: 500;
+
   @media screen and (max-width: 768px) {
     font-size: 18px;
     display: flex;
     align-self: center;
+    text-align: center;
     margin: 0;
   }
 `;

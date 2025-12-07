@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
       <LogoContainer>
         <Logo src={ASSETS.LOGO} />
       </LogoContainer>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ className: 'react-icons' }}>
         <Nav>
           <Bars onClick={toggle} />
           <NavMenu>

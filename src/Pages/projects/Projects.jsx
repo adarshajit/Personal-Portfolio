@@ -1,5 +1,7 @@
+import ProjectData from "@constants/projectData";
+import otherData from "@constants/otherData";
 
-
+import { Footer } from "@components";
 import {
   ProjectContainer,
   H1,
@@ -14,9 +16,6 @@ import {
   ProjectFlex,
 } from "./ProjectElements";
 
-import { Footer } from "@components";
-import ProjectData from "@constants/projectData";
-import otherData from "./otherData";
 export const Projects = () => {
   document.title = "Adarsh Ajit - Projects";
   return (

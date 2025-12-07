@@ -18,7 +18,7 @@ import {
 import { AiFillGithub as GitIcon } from "react-icons/ai";
 
 import { AiFillLinkedin as LinkedinIcon } from "react-icons/ai";
-import { FaTwitter as TwitterIcon } from "react-icons/fa";
+import { FaSquareXTwitter as TwitterIcon } from "react-icons/fa6";
 import { IconContext } from "react-icons/lib";
 
 const Contact = () => {
@@ -64,7 +64,7 @@ const Contact = () => {
                 <A
                   target="_blank"
                   rel="noreferrer"
-                  href="https://twitter.com/AdarshAjits"
+                  href="https://twitter.com/AdarshAjit"
                 >
                   <TwitterIcon />
                 </A>

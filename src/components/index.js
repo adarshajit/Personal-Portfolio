@@ -1,4 +1,4 @@
-export { default as Navbar } from './navbar/Navbar';
-export { default as Footer } from './footer/Footer';
-export { default as Sidebar } from './sidebar/Sidebar';
-export { default as Modal } from './modal';
+export { default as Navbar } from './Navbar/Navbar';
+export { default as Footer } from './Footer/Footer';
+export { default as Sidebar } from './Sidebar/Sidebar';
+export { default as Modal } from './Modal';
